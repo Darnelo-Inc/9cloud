@@ -10,12 +10,18 @@
     color: @white;
     text-transform: uppercase;
 
-    background: none;
+    background-color: @red;
     border: none;
     cursor: pointer;
 
+    transition: background .1s linear;
+
     &:focus {
         outline: none;
+    }
+
+    &:hover:not(&--header) {
+        background-color: darken(@red,10%);
     }
 
     &--header {
