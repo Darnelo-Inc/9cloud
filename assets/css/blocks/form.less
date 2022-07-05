@@ -1,0 +1,72 @@
+// main: ../style.less
+
+.form {
+    &--domain {
+        position: relative;
+
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+        padding: 1rem;
+
+        background-image: linear-gradient(to right, #973b48, #36334d);
+
+        &::before {
+            content: "https://";
+
+            position: absolute;
+            top: 48%;
+            left: 3.5%;
+            z-index: 1;
+
+            font-size: 1.5rem;
+            color: @black;
+
+            transform: translateY(-52%);
+        }
+
+        &::after {
+            content: ".com  ⯆";
+
+            position: absolute;
+            top: 48%;
+            right: 27%;
+            z-index: 1;
+
+            font-size: 1.5rem;
+            color: @black;
+
+            text-align: center;
+            cursor: pointer;
+
+            transform: translateY(-52%);
+        }
+    }
+}
+
+.form__input {
+    width: 75%;
+    padding-left: 6rem;
+    padding-right: 6rem;
+
+    font-family: inherit;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.2;
+    color: @black;
+
+    &:focus {
+        outline: none;
+    }
+
+    &::before {
+        content: "";
+
+        display: block;
+        width: 10px;
+        height: 10px;
+
+        background-color: @black;
+    }
+}
