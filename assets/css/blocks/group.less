@@ -1,0 +1,50 @@
+// main: ../style.less
+
+.group {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+    &--domain {
+        margin-top: 4rem;
+    }
+}
+
+.group__item {
+    position: relative;
+
+    height: 120px;
+    width: 33.333%;
+    max-width: 32rem;
+    padding-left: 8rem;
+}
+
+.group__img {
+    position: absolute;
+    top: 0;
+    left: 35px;
+    z-index: 1;
+}
+
+.group__title {
+    margin-bottom: 1rem;
+
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: @white;
+    text-transform: uppercase;
+
+    &--domain {
+        color: @black;
+    }
+}
+
+.group__text {
+    font-size: 1.4rem;
+    line-height: 1.43;
+    color: #98a3a3;
+
+    &--domain {
+        color: @grey;
+    }
+}
