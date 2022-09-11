@@ -1,7 +1,7 @@
 // main: ../style.less
 
 .plan {
-    padding: 9rem 4rem;
+    margin: 9rem 4rem;
 }
 
 .plan__header {
@@ -165,6 +165,23 @@
 
     .plan__row, .plan__numbers, .amount {
         color: @white;
+    }
+}
+
+.plan__footer {
+    margin-top: 4rem;
+
+    font-family: @sans;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.plan__link {
+    color: @red;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
     }
 }
 
